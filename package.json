@@ -1,0 +1,22 @@
+{
+  "name": "ionic-qrscanner-gui",
+  "version": "1.0.0",
+  "description": "This component creates a QR scanner GUI and manages the [QRScanner Natove Plugin](https://ionicframework.com/docs/native/qr-scanner/) plugin in a straightforward way.",
+  "main": ".index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ionic",
+    "qr",
+    "scanner",
+    "gui"
+  ],
+  "author": "Raschid JF Rafaelly <lachachi@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^5.5.11",
+    "@ionic-native/qr-scanner": "^4.9.1"
+  }
+}

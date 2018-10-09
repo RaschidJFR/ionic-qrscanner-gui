@@ -1,0 +1,43 @@
+qr-scanner {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 180px;
+    font-weight: lighter; // color: #ffffff1c;
+    ion-icon.icon.highlight {
+        color: #00ff00 !important;
+    }
+    * {
+        margin: auto;
+    }
+}
+
+ion-app[show-qr-scanner="true"] {
+	background-size: cover; 
+	background-color: transparent;
+	.ion-page {
+		&:not(.dont-hide) {
+			visibility: hidden;
+		}
+		.content {
+			background-color: transparent;
+		}
+	}
+	&.qr-scanner-debug{
+		background: url("https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350") no-repeat center;
+		background-size: cover; 
+	}
+	qr-scanner .icon {
+		visibility: visible;
+	}
+}
+
+ion-app:not([show-qr-scanner="true"]) {
+	qr-scanner .icon {
+		visibility: hidden;
+	}
+}
