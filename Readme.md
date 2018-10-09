@@ -11,7 +11,7 @@ This component creates an out-of-the-box QR scanner GUI and manages the [QRScann
 1 Install thi package:
 
 ```
-$ npm install ionic-qrscanner-gui
+$ npm install git@github.com:RaschidGithub/ionic-qrscanner-gui.git
 ```
 
 2 Add the component to your app's main module:
@@ -58,7 +58,8 @@ $ npm install ionic-qrscanner-gui
 
 
 
-### Inputs ###
+### Parameters ###
 
 * `defaultOn:`: If true, turns the camera on and starts scanning on startup. Default is `true`.
 * `Scan`: Event triggered on finding a text string in a QR code, passes the text as parameter.
+* `color`: Default color for the scanner's frame.
